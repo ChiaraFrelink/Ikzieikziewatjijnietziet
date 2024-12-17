@@ -305,13 +305,8 @@ h2 {
   color: var(--light-green);
 }
 
-.podcast {
-  display: flex;
-  justify-content: space-around;
-  margin-left: -100px;
-}
-
 .icon {
+  margin-left: -100px;
   transition: transform 0.5s;
 }
 
@@ -319,10 +314,23 @@ h2 {
   transform: scale(1.2);
 }
 
-.podcast p {
+.podcast h3 {
+  color: var(--light-green);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.podcast {
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.podcast p {
   color: var(--light-brown);
+  text-align: center;
+  margin-top: 0;
+  font-size: 20px;
 }
 
 .luister {
@@ -355,6 +363,11 @@ h2 {
   height: auto;
 }
 
+.kopen h1 {
+  margin-top: 100px;
+  font-size: 40px;
+}
+
 @keyframes pulse {
   0% { 
       transform: scale(1); 
@@ -368,5 +381,39 @@ h2 {
 }
 
 .pulse {
-animation: pulse 2s infinite forwards;  
+  animation: pulse 2s infinite forwards;  
+}
+
+@keyframes merch {
+  0% { 
+      transform: scale(1); 
+  }
+  50% { 
+      transform: scale(1.05); 
+  }
+  100% { 
+      transform: scale(1); 
+  }
+}
+
+.merch {
+  width: 400px;
+  height: auto;
+  animation: pulse 2s 5;
+}
+
+.winkelmandje {
+  display: flex;
+  justify-content: center;
+}
+
+.winkelmandje img {
+  width: 100px;
+  height: auto;
+  transition: transform 0.5s;
+  margin: 10px 0 0 -15px;
+}
+
+.winkelmandje img:hover {
+  transform: scale(1.2);
 }
